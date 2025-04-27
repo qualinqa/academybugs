@@ -2,9 +2,9 @@ name: Allure Report
 
 on:
   push:
-    branches: [main, master]
+    branches: [main, master, academybugs]
   pull_request:
-    branches: [main, master]
+    branches: [main, master, academybugs]
   # ручной запуск
   workflow_dispatch:
 
