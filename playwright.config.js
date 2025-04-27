@@ -10,7 +10,7 @@ export default defineConfig({
   workers: 1,
   reporter: [['html', { open: 'never' }] , 
   ['allure-playwright']],
-  outputDir: 'test-results/output/',
+  //outputDir: 'test-results/output/',
   use: {
     baseURL: 'https://academybugs.com/find-bugs/',
     headless: true,

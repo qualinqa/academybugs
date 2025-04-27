@@ -1,27 +1,30 @@
 {
-  "name": "qa.guru_repo_academybugs",
+  "name": "academybugs",
   "version": "1.0.0",
   "type": "module",
-  "description": "QA.GURU course. Tests for AcademyBugs",
+  "description": "academybugs.com",
   "main": "index.js",
   "scripts": {
     "test": " npx playwright test",
     "ui": "npx playwright test --ui",
     "reportAwesome": "npx allure awesome ./allure-results --single-file",
     "reportClassic": "npx allure classic ./allure-results --single-file",
-    "codegen": "npx playwright codegen https://academybugs.com/find-bugs/#"
+    "codegen": "npx playwright codegen https://academybugs.com/find-bugs/#",
+    "allure:generate": "npx allure generate allure-results --clean -o allure-report",
+    "allure:serve": "npx allure serve allure-results",
+    "allure:history": "node scripts/allure-history.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/KseniyaRI/QA.GURU_Repo_AcademyBugs.git"
+    "url": "git+https://github.com/qualinqa/academybugs"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/KseniyaRI/QA.GURU_Repo_AcademyBugs/issues"
+    "url": "https://github.com/qualinqa/academybugs/issues"
   },
-  "homepage": "https://github.com/KseniyaRI/QA.GURU_Repo_AcademyBugs#readme",
+  "homepage": "https://github.com/qualinqa/academybugs#readme",
   "devDependencies": {
     "@faker-js/faker": "^9.7.0",
     "@playwright/test": "^1.52.0",
